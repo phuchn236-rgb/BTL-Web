@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lịch học | StudyFlow</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>📅 Quản lý lịch học</h1>
+      <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="subjects.html">Môn học</a>
+        <a href="assignments.html">Bài tập</a>
+        <a href="tests.html">Kiểm tra</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Thời khóa biểu</h2>
+      <div class="week-selector">
+        <label for="weekSelect">Tuần:</label>
+        <select id="weekSelect"></select>
+      </div>
+
+      <div class="schedule-container">
+        <table class="schedule" id="scheduleTable">
+          <thead>
+            <tr>
+              <th>Giờ</th>
+              <th>Thứ 2</th>
+              <th>Thứ 3</th>
+              <th>Thứ 4</th>
+              <th>Thứ 5</th>
+              <th>Thứ 6</th>
+              <th>Thứ 7</th>
+              <th>Chủ nhật</th>
+            </tr>
+          </thead>
+          <tbody id="scheduleBody"></tbody>
+        </table>
+      </div>
+
+      <button class="add-btn" id="addBtn">➕ Thêm môn học</button>
+    </main>
+
+    <div class="modal" id="scheduleModal">
+      <div class="modal-content">
+        <h3 id="modalTitle">Thêm môn học</h3>
+        <input type="text" id="subjectName" placeholder="Tên môn học" />
+        <input
+          type="text"
+          id="subjectRoom"
+          placeholder="Phòng học (VD: A101)"
+        />
+        <select id="subjectDay">
+          <option value="2">Thứ 2</option>
+          <option value="3">Thứ 3</option>
+          <option value="4">Thứ 4</option>
+          <option value="5">Thứ 5</option>
+          <option value="6">Thứ 6</option>
+          <option value="7">Thứ 7</option>
+          <option value="0">Chủ nhật</option>
+        </select>
+        <input type="time" id="startTime" />
+        <input type="time" id="endTime" />
+        <input type="color" id="subjectColor" value="#3b82f6" />
+        <div>
+          <button id="saveBtn" class="save-btn">Lưu</button>
+          <button id="deleteBtn" class="delete-btn" style="display: none">
+            Xóa
+          </button>
+          <button id="cancelBtn" class="cancel-btn">Hủy</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

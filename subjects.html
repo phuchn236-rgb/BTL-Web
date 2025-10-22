@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <title>Môn học | StudyFlow</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>📘 Quản lý môn học</h1>
+      <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="schedule.html">Lịch học</a>
+        <a href="subjects.html" class="active">Môn học</a>
+        <a href="assignments.html">Bài tập</a>
+        <a href="tests.html">Kiểm tra</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="top-bar">
+        <div>
+          <label>Tuần:</label>
+          <select id="weekSelect"></select>
+        </div>
+        <button class="add-btn" id="addSubjectBtn">➕ Thêm môn học</button>
+      </div>
+
+      <div class="subject-list" id="subjectList"></div>
+
+      <div class="modal" id="subjectModal">
+        <div class="modal-content">
+          <h3 id="modalTitle">Thêm môn học</h3>
+          <input type="text" id="subjectName" placeholder="Tên môn học" />
+          <input
+            type="text"
+            id="subjectCode"
+            placeholder="Mã môn (VD: CS301)"
+          />
+          <input type="number" id="subjectCredits" placeholder="Số tín chỉ" />
+          <input type="text" id="subjectTeacher" placeholder="Giảng viên" />
+          <textarea
+            id="subjectDesc"
+            placeholder="Mô tả ngắn"
+            style="height: 60px"
+          ></textarea>
+          <div style="text-align: right; margin-top: 10px">
+            <button class="save-btn" id="saveSubject">Lưu</button>
+            <button class="delete-btn" id="deleteSubject" style="display: none">
+              Xóa
+            </button>
+            <button class="cancel-btn" id="cancelSubject">Hủy</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <title>Bài tập | StudyFlow</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>📝 Quản lý bài tập</h1>
+      <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="schedule.html">Lịch học</a>
+        <a href="subjects.html">Môn học</a>
+        <a href="assignments.html" class="active">Bài tập</a>
+        <a href="tests.html">Kiểm tra</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Danh sách bài tập</h2>
+      <div class="assignment-list" id="assignmentList"></div>
+      <button class="add-btn" id="addBtn">➕ Thêm bài tập</button>
+    </main>
+
+    <div class="modal" id="assignmentModal">
+      <div class="modal-content">
+        <h3 id="modalTitle">Thêm bài tập</h3>
+        <input type="text" id="title" placeholder="Tên bài tập" />
+        <textarea id="desc" placeholder="Mô tả bài tập"></textarea>
+        <input
+          type="text"
+          id="subject"
+          placeholder="Môn học (VD: Lập trình Web)"
+        />
+        <select id="priority">
+          <option value="high">Cao</option>
+          <option value="medium">Trung bình</option>
+          <option value="low">Thấp</option>
+        </select>
+        <label>Hạn nộp:</label>
+        <input type="date" id="dueDate" />
+        <div>
+          <button id="saveBtn" class="save-btn">Lưu</button>
+          <button id="deleteBtn" class="delete-btn" style="display: none">
+            Xóa
+          </button>
+          <button id="cancelBtn" class="cancel-btn">Hủy</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

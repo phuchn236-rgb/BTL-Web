@@ -1,0 +1,655 @@
+/* ======= RESET & CHUNG ======= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-image: url(./anhgau/anhnen.png);
+  color: #333;
+  min-height: 100vh;
+  animation: fadeIn 0.6s ease;
+}
+.login-box {
+      width: 350px;
+      margin: 100px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    h2 {
+      color: #61ad73;
+      margin-bottom: 20px;
+    }
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      background: #2f4f4f;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+      width: 100%;
+    }
+    button:hover {
+      background: #1e3a3a;
+    }
+    .register-link {
+      margin-top: 20px;
+      display: block;
+      color: #1e3a8a;
+    }
+    header {
+      background: #1e3a3a;
+      color: white;
+      padding: 12px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+     .register-box {
+      width: 350px;
+      margin: 100px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      background: #2f4f4f;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+      width: 100%;
+    }
+    button:hover {
+      background: #1e3a3a;
+    }
+    .login-link {
+      margin-top: 20px;
+      display: block;
+      color: #1e3a8a;
+    }
+    header {
+      background: #1e3a3a;
+      color: white;
+      padding: 12px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ======= HEADER ======= */
+header {
+  background: #31473a;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 22px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.logout {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logout:hover {
+  background: #dc2626;
+}
+
+/* ======= TRANG CHỦ ======= */
+main {
+  padding: 40px;
+  text-align: center;
+}
+
+.intro {
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  justify-content: center;
+}
+
+.card {
+  background: #edf4f2 no-repeat center 25px / 80px;
+  padding-top: 120px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: popIn 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  color: #31473a;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  background: #31473a;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.card a:hover {
+  background: #9a9;
+}
+
+/* ICON BACKGROUND */
+.login-card {
+  background-image: url(./anhgau/gaudangnhap.png);
+}
+.schedule-card {
+  background-image: url(./anhgau/gaucamlich.png);
+}
+.subjects-card {
+  background-image: url(./anhgau/gaucamsach.png);
+}
+.assignments-card {
+  background-image: url(./anhgau/gaulambt.png);
+}
+.tests-card {
+  background-image: url(./anhgau/gaulamkt.png);
+}
+
+/* ======= FOOTER ======= */
+footer {
+  margin-top: 40px;
+  padding: 10px;
+  text-align: center;
+  background: #31473a;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 150px;
+  width: 100%;
+  margin-left: 50px;
+}
+
+.footer-column {
+  text-align: center;
+  padding: 5px;
+  margin: 20px 50px 20px 50px;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-column a:hover {
+  color: #9a9;
+}
+
+/* ======= FORM ======= */
+.form-container {
+  max-width: 350px;
+  margin: 100px auto;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #31473a;
+}
+
+.form-container a {
+  color: #31473a;
+  text-decoration: none;
+}
+
+.form-container a:hover {
+  text-decoration: underline;
+}
+
+form {
+  margin: 15px auto;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+input {
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* ======= NÚT ======= */
+.add-btn,
+button {
+  background: #31473a;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.add-btn:hover,
+button:hover {
+  background: #446a55;
+}
+
+/* ======= DANH SÁCH ======= */
+.list {
+  list-style: none;
+  padding: 20px;
+}
+
+/* ======= MODAL ======= */
+ .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.4);
+      justify-content: center;
+      align-items: center;
+      z-index: 100;
+    }
+    .modal-content {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 320px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .modal-content input, .modal-content select {
+      width: 90%;
+      padding: 8px;
+      margin: 8px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+/* ======= LỊCH HỌC ======= */
+.header {
+      background: #2563eb;
+      color: white;
+      padding: 15px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+header h1 { font-size: 22px; margin: 0; }
+nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      font-weight: 500;
+    }
+nav a:hover { text-decoration: underline; }
+
+    main { padding: 30px; } h2 { color: #1e3a8a; }
+
+.week-selector {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+.week-selector select {
+      padding: 5px 10px;
+      font-size: 15px;
+      border-radius: 6px;
+      border: 1px solid #94a3b8;
+    }
+
+.schedule-container {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      margin-top: 20px;
+    }
+
+table.schedule {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+    }
+
+table.schedule th {
+      background: #f1f5f9;
+      color: #1e3a8a;
+      padding: 10px;
+      font-weight: 600;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+table.schedule td {
+      border: 1px solid #e2e8f0;
+      height: 80px;
+      position: relative;
+    }
+
+.time-col {
+  font-weight: 500;
+  width: 80px;
+  text-align: center;
+  background: #e2e8f0;
+  border-right: 1px solid #2c5485;
+}
+
+tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+tr:hover {
+  background-color: #8e9ba8;
+}
+
+.add-btn {
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 10px 16px;
+      font-weight: bold;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+.save-btn { background: #2563eb; color: white; }
+.delete-btn { background: #dc2626; color: white; }
+.cancel-btn { background: #94a3b8; color: white; }
+/* ======= MÔN HỌC (CARDS) ======= */
+.subject-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+.subject-card {
+        background: white;
+        border-radius: 10px;
+        padding: 15px 20px;
+        width: 260px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        position: relative;
+      }
+
+.subject-card h3 {
+        margin: 0;
+        font-size: 17px;
+        color: #2563eb;
+      }
+
+.subject-card small {
+        display: block;
+        color: #666;
+        margin-bottom: 6px;
+      }
+
+.subject-card p {
+        margin: 4px 0;
+        font-size: 14px;
+      }
+
+.card-buttons {
+        position: absolute;
+        top: 10px;
+        right: 12px;
+      }
+
+.card-buttons button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-left: 6px;
+        font-size: 15px;
+      }
+/* ======= HIỆU ỨNG ======= */
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* ======= DANH SÁCH BÀI TẬP ======= */
+    /* ===== DANH SÁCH ===== */
+.assignment-list {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+.assignment-card {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 15px 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+.left {
+      flex: 1;
+    }
+
+.title {
+      font-weight: 600;
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+
+.desc {
+      color: #475569;
+      font-size: 14px;
+    }
+
+.tags {
+      margin-top: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+.tag {
+      font-size: 13px;
+      padding: 3px 8px;
+      border-radius: 6px;
+      color: white;
+    }
+
+.tag.high { background: #ef4444; }
+.tag.medium { background: #f59e0b; }
+.tag.low { background: #10b981; }
+.tag.subject { background: #3b82f6; }
+
+.right {
+      text-align: right;
+      font-size: 13px;
+    }
+
+.due-date {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-weight: 500;
+    }
+
+.overdue {
+      color: #dc2626;
+      font-weight: bold;
+    }
+
+.icon-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      margin-left: 8px;
+    }
+  /* Test */
+.top-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+.test-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+.test-card {
+        background: white;
+        border-radius: 10px;
+        padding: 15px 20px;
+        width: 260px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        position: relative;
+      }
+
+.test-card h3 {
+        margin: 0;
+        font-size: 17px;
+        color: #2563eb;
+      }
+
+.test-card small {
+        display: block;
+        color: #666;
+        margin-bottom: 6px;
+      }
+
+.test-card p {
+        margin: 4px 0;
+        font-size: 14px;
+      }
+
+.card-buttons {
+        position: absolute;
+        top: 10px;
+        right: 12px;
+      }
+
+.card-buttons button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-left: 6px;
+        font-size: 15px;
+      }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

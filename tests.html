@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <title>Kiểm tra | StudyFlow</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>📘 Quản lý kiểm tra</h1>
+      <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="schedule.html">Lịch học</a>
+        <a href="subjects.html">Môn học</a>
+        <a href="assignments.html">Bài tập</a>
+        <a href="tests.html" class="active">Kiểm tra</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="top-bar">
+        <div>
+          <label>Tuần:</label>
+          <select id="weekSelect"></select>
+        </div>
+        <button class="add-btn" id="addTestBtn">➕ Thêm kiểm tra</button>
+      </div>
+
+      <div class="test-list" id="testList"></div>
+
+      <div class="modal" id="testModal">
+        <div class="modal-content">
+          <h3 id="modalTitle">Thêm kiểm tra</h3>
+          <input type="text" id="testName" placeholder="Tên kiểm tra" />
+          <input type="text" id="testSubject" placeholder="Môn học" />
+          <input type="date" id="testDate" />
+          <input type="time" id="testStart" />
+          <input type="time" id="testEnd" />
+          <input type="text" id="testRoom" placeholder="Phòng học" />
+          <textarea
+            id="testNote"
+            placeholder="Ghi chú"
+            style="width: 100%; height: 60px"
+          ></textarea>
+          <div style="text-align: right; margin-top: 10px">
+            <button class="save-btn" id="saveTest">Lưu</button>
+            <button class="delete-btn" id="deleteTest" style="display: none">
+              Xóa
+            </button>
+            <button class="cancel-btn" id="cancelTest">Hủy</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
